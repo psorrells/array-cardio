@@ -71,6 +71,11 @@
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    const dataToSet = new Set(data)
+    const obj = new Object();
+    dataToSet.forEach(item => obj[item] = 0)
+    data.forEach(item => obj[item] += 1)
+    console.log(obj)
 
   </script>
 </body>
